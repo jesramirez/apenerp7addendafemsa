@@ -8,11 +8,11 @@ class sale_order(osv.Model):
     _name = 'sale.order'
     _inherit = 'sale.order'
     _columns = {
-        'entrance':fields.char('Entrance', size=20, required=True, help="Numero de Entrada"),
+        'entrance':fields.char('Entrance', size=20, help="Number assigned by Femsa, for entering product to your stock"),
         'currency_local':fields.selection([('MXP','MXP'),
- 		('USD','USD')],'Currency_local',required=True, help="Moneda de Venta"),
-        'remission':fields.char('Remision', size=20, required=True, help="Numero de Remision"),
-        'purchase_order':fields.char('Purchase Order', size=20, required=True, help="Numero de Orden de Compra"),
-        'consumption_order':fields.char('Consumption Order', size=20, help="Numero de Orden de Consumo"),
+ 		('USD','USD')],'Currency_local', help="Currency in which the sale was made"),
+        'referral':fields.char('Referral', size=20, help="Number Referral sale"),
+        'purchase_order':fields.char('Purchase Order', size=20, help="Purchase Order Number"),
+        'consumption_order':fields.char('Consumption Order', size=20, help="Consumption Order Number"),
     }
  

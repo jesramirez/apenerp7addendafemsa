@@ -2,7 +2,7 @@
 
 {
     'name': 'ADDENDA FEMSA',
-    'version': '0.1',
+    'version': '0.01',
     'author': 'AIRIBUZ SA DE CV',
     'category': 'Sales Management',
     'depends': ['base','sale'],
